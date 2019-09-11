@@ -6,5 +6,13 @@
         xmlns:local="clr-namespace:PongProject"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
-    <Grid Background="Black"/>
+    <Grid Background="Black">
+        <TextBox Name="text1" HorizontalAlignment="Left" TextAlignment="Center" Height="255" Margin="71,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="645" FontSize="100"  Background="Black">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Foreground" Value="White"></Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+    </Grid>
 </Window>

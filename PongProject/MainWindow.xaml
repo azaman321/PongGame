@@ -5,15 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         KeyDown="MainWindow_OnKeyDown"
-        Title="Ping-Pong" Height="503" Width="824" ResizeMode="NoResize">
+        Title="Ping-Pong" Height="503" Width="824" ResizeMode="NoResize" >
     <Canvas Width="800" Height="475" Name="MainCanvas" Background="Black">
 
-        <Rectangle Height="80" Width="20" Fill="#FFDD0202" Canvas.Top="{Binding LeftPadPosition}"/>
-        <Rectangle Height="80" Width="20" Fill="#EEEEEE" Canvas.Top="{Binding RightPadPosition}" Canvas.Left="780"/>
+        <!--<Rectangle Height="80" Width="20" Fill="#FFDD0202" Canvas.Top="{Binding LeftPadPosition}"/>-->
+        <!--<Rectangle Height="80" Width="20" Fill="#EEEEEE" Canvas.Top="{Binding RightPadPosition}" Canvas.Left="780"/>-->
         <Line X1="400" X2="400" Y2="500" Y1="0" StrokeThickness="2" Stroke="#EEEEEE"/>
+
+
         <Ellipse Width="20" Height="20" Canvas.Left="{Binding BallXPosition}" Canvas.Top="{Binding BallYPosition}" StrokeThickness="0.1" Fill="#EEEEEE"/>
 
         <Label Canvas.Left="350" Canvas.Top="35" Content="{Binding LeftResult}" Height="auto" FontSize="40" Foreground="#EEEEEE"/>
         <Label Canvas.Left="421" Canvas.Top="35" Content="{Binding RightResult}" Height="auto" FontSize="40" Foreground="#EEEEEE"/>
+        <Button   Canvas.Top="{Binding LeftPadPosition}" Height="80" Width="56" Opacity="0.7" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/5a3a360e1bbaf6.52177549151376436611368594.png"/>
+            </Button.Background>
+        </Button>
+        <Button Height="80" Width="56" Opacity="0.7" Canvas.Top="{Binding RightPadPosition}" Canvas.Left="744" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/5a3a360e1bbaf6.52177549151376436611368594.png"/>
+            </Button.Background>
+        </Button>
+
+
     </Canvas>
 </Window>

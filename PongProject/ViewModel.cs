@@ -5,6 +5,7 @@ namespace PongProject
     class ViewModel : INotifyPropertyChanged
     {
         private int leftPadPosition = 180;
+        private int letPadPosition = 180;
         private int rightPadPosition = 180;
         private int leftResult = 0;
         private int rightResult = 0;
@@ -19,6 +20,19 @@ namespace PongProject
                 OnPropertyChanged("LeftPadPosition");
             }
         }
+
+        public int RitPadPosition
+        {
+            get { return letPadPosition; }
+            set
+            {
+                letPadPosition = value;
+                OnPropertyChanged("LeftPad");
+            }
+        }
+
+
+
 
         public int RightPadPosition
         {
@@ -91,7 +105,7 @@ namespace PongProject
 
         public void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
