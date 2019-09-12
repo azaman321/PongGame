@@ -4,6 +4,14 @@ Classic Pong
 Motivation:
 Tasked with a project to create a game in C# and WPF and I suddenly had an idea to create a game I used to love in my younger days.
 
+Monday- I created my project with wpf and made changes to my main window. I added a canvas as a backdrop for my game and added two rectangles to represent my paddles and an ellipse object for my ball. A line object was added to the canvas to split it in two. I found out about the line object by looking online and found out it used to be in winforms however its not in the toolbox for wpf.
+
+Tuesdsay- I implemented a view model class to contain properties about the different objects and provide data binding between the view and the model.  I added a  ​INotifyPropertyChanged​ interface so I can track changes to the objects in my window. I also binded the view control value to properties in the view model. I also created a ball class to store information to the ball and created an object in the viewmodel so I can use variables from the ball class in the view model.
+
+Wednesday
+
+
+
 
 
 
