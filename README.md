@@ -8,7 +8,7 @@ Monday- I created my project with wpf and made changes to my main window. I adde
 
 Tuesdsay- I implemented a view model class to contain properties about the different objects and provide data binding between the view and the model.  I added a  ​INotifyPropertyChanged​ interface so I can track changes to the objects in my window. I also binded the view control value to properties in the view model. I also created a ball class to store information to the ball and created an object in the viewmodel so I can use variables from the ball class in the view model.
 
-Wednesday
+Wednesday- I started to implement different methods for my project to do many things such as get the value of the canvas and prevent objects from going past it. I also implemented a ticker timer to update the ball as it moves across the screen.
 
 
 
