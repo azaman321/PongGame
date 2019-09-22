@@ -47,7 +47,7 @@ The main window containing the initialized components
 Player.Xaml.cs
 This class contains a textbox where I can pass the winner of the game to.
 
-I decided to implement MVVM into my project rather than tradional UI development as I believe it makes the implementation of an application.
+
 
 Challenges:
 The biggest challenge I had was implementing the collisions and setting the bounds, I tried many different methods and none seem to work. I did some research and found out I could use the vector structures to implement direction and magnitude.
